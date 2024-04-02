@@ -16,7 +16,7 @@ git checkout small-image
 docker buildx create --name mybuilder --use --bootstrap # only if not created before
 docker buildx build --push --platform linux/amd64,linux/arm64 --tag docker/welcome-to-docker .
 ```
-
+docker build -t welcome-to-docker .
 Be sure to verify the changes. Run the following command and visit http://localhost:8088 to verify the changes were successfully deployed.
 
 ```bash
